@@ -174,7 +174,7 @@ def Thib():
     # choix d'un joueur au hasard
     entityId = mc.getPlayerEntityIds()
     joueurChoisi = randint(0,len(entityId)-1)
-    pos = mc.getPos(entityId[joueurChoisi])
+    pos = mc.entity.getPos(entityId[joueurChoisi])
 
     # création d'une structure autour du joueur 
     mc.setBlock(pos.x,pos.y-1,pos.z,1)
@@ -218,14 +218,4 @@ if Start ==3:
     Aym()
 if Start ==4:
     Thib()
-
-    
-
-
-
-            
-    
-
-    
-
 
